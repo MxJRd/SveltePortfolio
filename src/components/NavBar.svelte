@@ -5,12 +5,10 @@
     Icon,
     Menu,
     ListItem,
-    MaterialApp,
   } from "svelte-materialify/src";
   import { mdiMenu, mdiDotsVertical } from "@mdi/js";
 </script>
 
-<MaterialApp>
   <AppBar class="primary-color">
     <div slot="icon">
       <Button fab size="small">
@@ -31,4 +29,3 @@
       <ListItem>Item 3</ListItem>
     </Menu>
   </AppBar>
-</MaterialApp>

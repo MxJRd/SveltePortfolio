@@ -1,5 +1,6 @@
 <script>
   import NavBar from "./NavBar.svelte";
+  import { Button, Container, Row, Col } from "svelte-materialify/src";
 </script>
 
 <div>
@@ -9,14 +10,22 @@
   <body>
     <header>
       <NavBar />
-      <h1>The Efficient <strong>Unorthodox</strong></h1>
+      <Container>
+        <h1>The Efficient <span><strong>Unorthodox</strong></span></h1>
+        <h4>My Journey through Learning to Code</h4>
+        <br />
+        <Button class="secondary-color">Welcome</Button>
+      </Container>
       <hr />
     </header>
     <article>
       <header>
-        <h2>The section title</h2>
-        <p>The text paragraph.</p>
+        <h2>About Me</h2>
+        <p>Who I am</p>
       </header>
     </article>
   </body>
 </div>
+
+<style>
+</style>

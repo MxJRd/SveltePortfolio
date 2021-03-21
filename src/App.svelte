@@ -1,15 +1,18 @@
 <script lang="ts">
   import Header from "./components/Header.svelte";
-  import { Button } from "svelte-materialify/src";
+  import { MaterialApp } from 'svelte-materialify/src';
+  import ContactMe from './components/ContactMe.svelte'
 </script>
 
 <main>
-  <Header />
-  <Button class="secondary-color">This is a button</Button>
-  <p>
-    Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
-    how to build Svelte apps.
-  </p>
+  <MaterialApp>
+    <Header />
+    <p>
+      Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
+      how to build Svelte apps.
+    </p>
+    <ContactMe />
+  </MaterialApp>
 </main>
 
 <style>
