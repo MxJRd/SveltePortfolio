@@ -10,9 +10,6 @@
       {#each Array(3) as _, i}
         <Tab class="primary-color rounded-r-xl">{projectsArray[i]}</Tab>
       {/each}
-      <Button fab size="small">
-        <Icon path={mdiPageFirst} />
-      </Button>
     </div>
 
     <div class="pa-2">

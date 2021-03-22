@@ -4,12 +4,12 @@
   import ContactMe from "./components/ContactMe.svelte";
   import Projects from "./components/Projects.svelte";
   import AboutMe from "./components/AboutMe.svelte";
-  import SideBar from "./components/Sidebar.svelte";
   import Sidebar from "./components/Sidebar.svelte";
+  const theme = "dark";
 </script>
 
 <main>
-  <MaterialApp>
+  <MaterialApp {theme}>
     <Container>
       <Col>
         <Sidebar />
@@ -25,6 +25,7 @@
 </main>
 
 <style>
+  :global(body.dark-theme)
   main {
     padding: 1em;
     max-width: 240px;

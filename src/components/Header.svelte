@@ -18,7 +18,7 @@
       </h1>
       <h4>
         My Journey through <strong
-          ><span class="indigo-text text-accent-3">Fullstack</span> Development</strong
+          ><span class="light-green-text text-accent-4">Fullstack</span> Development</strong
         >
       </h4>
       <br />
