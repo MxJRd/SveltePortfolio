@@ -3,29 +3,27 @@
     AppBar,
     Button,
     Icon,
-    Menu,
-    ListItem,
+    NavigationDrawer,
+    Overlay,
   } from "svelte-materialify/src";
-  import { mdiMenu, mdiDotsVertical } from "@mdi/js";
+  import { mdiMenu } from "@mdi/js";
+
+  let active = false;
+  function toggleNavigation() {
+    active = !active;
+  }
 </script>
 
-  <AppBar class="primary-color">
+<div style="position:relative;height:250px">
+  <AppBar>
     <div slot="icon">
-      <Button fab size="small">
+      <Button fab depressed on:click={toggleNavigation}>
         <Icon path={mdiMenu} />
       </Button>
     </div>
-    <span slot="title">Title</span>
-    <div style="flex-grow:1" />
-    <Button>Item</Button>
-    <Menu right>
-      <div slot="activator">
-        <Button fab size="small">
-          <Icon path={mdiDotsVertical} />
-        </Button>
-      </div>
-      <ListItem>Item 1</ListItem>
-      <ListItem>Item 2</ListItem>
-      <ListItem>Item 3</ListItem>
-    </Menu>
+    <span slot="title"> Click The Menu </span>
+    <NavigationDrawer style="position: fixed" {active}>Content</NavigationDrawer
+    >
+    <Overlay {active} absolute on:click={toggleNavigation} index={1} />
   </AppBar>
+</div>

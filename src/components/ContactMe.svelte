@@ -1,10 +1,30 @@
-<script>
+<script lang="ts">
+  import {
+    mdiLinkedin,
+    mdiEmailVariant,
+    mdiInstagram,
+    mdiGithub,
+  } from "@mdi/js";
+  import { Button, Icon } from "svelte-materialify/src";
 </script>
 
-<div>
-    <h1>Contact Me</h1>
-    <h3>LinkedIn</h3>
-    <h3>Github</h3>
-    <h3>Email</h3>
-    <h3>Instagram</h3>
-</div>
+<section>
+  <h2>Contact Me</h2>
+  <p>LinkedIn</p>
+  <Button fab size="small">
+    <Icon path={mdiLinkedin} />
+  </Button>
+  <p>Github</p>
+  <Button fab size="small">
+    <Icon path={mdiGithub} />
+  </Button>
+  <p>Email</p>
+  <Button fab size="small">
+    <Icon path={mdiEmailVariant} />
+  </Button>
+  <p>Instagram</p>
+  <Button fab size="small">
+    <Icon path={mdiInstagram} />
+  </Button>
+  <hr />
+</section>
